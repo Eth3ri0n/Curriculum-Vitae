@@ -1,0 +1,25 @@
+{
+  "name": "curriculum-vitae",
+  "version": "1.0.0",
+  "description": "Personnal Curriculum Vitae project",
+  "main": "index.js",
+  "scripts": {
+    "sass" : "sass -w scss:css"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "SASS",
+    "SCSS",
+    "CV",
+    "Curriculum",
+    "Vitae",
+    "Personnal",
+    "project"
+  ],
+  "author": "Thierryno Randrianarisaina",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.66.1"
+  }
+}

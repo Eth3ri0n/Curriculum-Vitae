@@ -31,14 +31,6 @@
       crossorigin="anonymous"
     ></script>
 
-    <!-- Linkedin Script -->
-    <script
-      src="https://platform.linkedin.com/badges/js/profile.js"
-      async
-      defer
-      type="text/javascript"
-    ></script>
-
     <!-- CSS -->
     <link rel="stylesheet" href="./css/variables.css" />
     <link rel="stylesheet" href="./css/style.css" />
@@ -246,7 +238,7 @@
         </div>
         <div class="contact">
           <h2 class="title-small">Me contacter</h2>
-          <form action="#">
+          <form name="contact" method="post" data-netlify="true">
             <div class="input-container">
               <i class="far fa-envelope prefix"></i>
               <input
@@ -258,9 +250,9 @@
             </div>
             <div class="input-container comment-container">
               <i class="fas fa-comments comment"></i>
-              <textarea name="description" id="description"></textarea>
+              <textarea name="message" id="description"></textarea>
             </div>
-            <button>
+            <button type="submit">
               <i class="fa fa-paper-plane postfix"></i>
             </button>
           </form>

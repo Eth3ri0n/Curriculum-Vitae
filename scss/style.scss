@@ -403,7 +403,7 @@ main {
           align-items: flex-start;
         }
 
-        .prefix {
+        i.fa-user.prefix {
           background: linear-gradient(
             to right,
             var(--primary),
@@ -414,14 +414,40 @@ main {
           font-size: 2rem;
           border-top-left-radius: 0.5rem;
         }
+        i.fa-envelope.prefix {
+          background: linear-gradient(
+            to right,
+            var(--primary),
+            var(--primary-darken)
+          );
+          padding: 1rem 2rem;
+          color: white;
+          font-size: 2rem;
+        }
 
-        input[type="email"] {
+        input[type="text"] {
           min-width: 60rem;
           padding: 1rem 2rem;
           border: 0;
           line-height: 2rem;
           outline: none;
           border-top-right-radius: 0.5rem;
+
+          @include media.xs {
+            min-width: 25rem;
+          }
+
+          &::placeholder {
+            color: var(--text-color);
+            font-weight: 700;
+          }
+        }
+        input[type="email"] {
+          min-width: 60rem;
+          padding: 1rem 2rem;
+          border: 0;
+          line-height: 2rem;
+          outline: none;
 
           @include media.xs {
             min-width: 25rem;

@@ -487,12 +487,35 @@ main .contact form .input-container {
     align-items: flex-start;
   }
 }
-main .contact form .input-container .prefix {
+main .contact form .input-container i.fa-user.prefix {
   background: linear-gradient(to right, var(--primary), var(--primary-darken));
   padding: 1rem 2rem;
   color: white;
   font-size: 2rem;
   border-top-left-radius: 0.5rem;
+}
+main .contact form .input-container i.fa-envelope.prefix {
+  background: linear-gradient(to right, var(--primary), var(--primary-darken));
+  padding: 1rem 2rem;
+  color: white;
+  font-size: 2rem;
+}
+main .contact form .input-container input[type=text] {
+  min-width: 60rem;
+  padding: 1rem 2rem;
+  border: 0;
+  line-height: 2rem;
+  outline: none;
+  border-top-right-radius: 0.5rem;
+}
+@media (max-width: 480px) {
+  main .contact form .input-container input[type=text] {
+    min-width: 25rem;
+  }
+}
+main .contact form .input-container input[type=text]::placeholder {
+  color: var(--text-color);
+  font-weight: 700;
 }
 main .contact form .input-container input[type=email] {
   min-width: 60rem;
@@ -500,7 +523,6 @@ main .contact form .input-container input[type=email] {
   border: 0;
   line-height: 2rem;
   outline: none;
-  border-top-right-radius: 0.5rem;
 }
 @media (max-width: 480px) {
   main .contact form .input-container input[type=email] {

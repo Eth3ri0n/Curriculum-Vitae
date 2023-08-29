@@ -50,10 +50,6 @@
       <aside>
         <div class="block">
           <h2 class="title-small">Contact</h2>
-          <h3>Téléphone</h3>
-          <p><a href="tel:+33604440446">06.04.44.04.46</a></p>
-          <h3>E-mail</h3>
-          <p><a href="mailto:">thierryno.randrianarisaina@gmail.com</a></p>
           <h3>Adresse</h3>
           <address>39 rue Vincent Scotto <br />65000 - Tarbes</address>
         </div>
@@ -240,6 +236,15 @@
           <h2 class="title-small">Me contacter</h2>
           <form name="contact" method="POST" data-netlify="true">
             <div class="input-container">
+              <i class="far fa-user prefix"></i>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Votre Nom" required
+              />
+            </div>
+            <div class="input-container">
               <i class="far fa-envelope prefix"></i>
               <input
                 type="email"
@@ -250,7 +255,7 @@
             </div>
             <div class="input-container comment-container">
               <i class="fas fa-comments comment"></i>
-              <textarea name="message" id="description" required></textarea>
+              <textarea name="message" id="description" required placeholder="&Eacute;crivez votre message ici"></textarea>
             </div>
             <button type="submit">
               <i class="fa fa-paper-plane postfix"></i>
